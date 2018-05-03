@@ -1,4 +1,4 @@
-# Blink drop in control
+# Basiq Webview integration server example
 
 
 ## Installing
