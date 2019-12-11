@@ -17,7 +17,7 @@ const accessTokenCheck = function (req, res) {
         });
     }
 
-    API.setHeader("Authorization", "Basic "+apiKey).setHeader("basiq-version", "2.0").send("oauth2/token", "POST", {
+    API.setHeader("Authorization", "Basic "+apiKey).setHeader("basiq-version", "2.0").send("token", "POST", {
         "scope": "CLIENT_ACCESS"
     }, function (body) {
         res.json({
@@ -42,7 +42,7 @@ const createAUser = function (req, res) {
         });
     }
 
-    API.setHeader("Authorization", "Basic "+apiKey).setHeader("basiq-version", "2.0").send("oauth2/token", "POST", {
+    API.setHeader("Authorization", "Basic "+apiKey).setHeader("basiq-version", "2.0").send("token", "POST", {
         "grant_type": "client_credentials"
     }, function (body) {
         API.setHeader("Authorization", "Bearer " + body.access_token).send("users", "POST", {
