@@ -8,10 +8,10 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "query-string": "^5.0.1",
-    "request": "^2.83.0"
+    "request": "^2.88.2"
   },
   "devDependencies": {
-    "eslint": "^4.16.0",
+    "eslint": "^8.33.0",
     "pre-commit": "^1.2.2"
   },
   "scripts": {
